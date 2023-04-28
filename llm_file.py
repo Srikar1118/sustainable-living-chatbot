@@ -66,7 +66,7 @@ with st.sidebar:
 text_splitter = CharacterTextSplitter(chunk_size=chunksize, chunk_overlap=10)
 
 # Intializing Cohere Embdedding
-embeddings = CohereEmbeddings(model="large",cohere_api_key="vLuTQVcIyLBLbb5UqNJb4sFitqv1D2g8mriKoFoi")
+embeddings = CohereEmbeddings(model="large",cohere_api_key="a5RSvZpezes44WewxVJ1EWnSYSlnaH0PnPCtCSab")
 
 
 def PDF_loader(document):
