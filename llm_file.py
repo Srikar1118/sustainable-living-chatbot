@@ -9,7 +9,6 @@ Original file is located at
 
 # Import Required Libraries
 import os
-import PyPDF2
 import streamlit as st
 from streamlit_chat import message
 from langchain.document_loaders import OnlinePDFLoader
