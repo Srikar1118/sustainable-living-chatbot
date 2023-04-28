@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import os
 import streamlit as st
 from streamlit_chat import message
@@ -15,32 +13,12 @@ from langchain.llms import Cohere
 
 
 st.set_page_config(page_title="key to sustainable living", page_icon=":tree:", layout="wide")
-# st.set_theme('sky')
-st.markdown(
-    """
-    <style>
-    .reportview-container {
-        background: url("https://img.freepik.com/free-photo/digital-screen-with-environment-day_23-2148884835.jpg")
-    }
-   .sidebar .sidebar-content {
-        background: url("https://img.freepik.com/free-photo/digital-screen-with-environment-day_23-2148884835.jpg")
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
-st.markdown(
-    "<h1 style='text-align: center;'>LETS LEAD AN ECO-FRIENDLY LIFE</h1>",
-    unsafe_allow_html=True,
-)
-
-with st.sidebar:
-    st.title("𓃰 𓃵 𓃝 𓃒")
-    uploaded_file = 'Energy_Sustainbality.pdf'
-    temp_r = st.slider("Temperature", 0.1, 0.9, 0.3, 0.1)
-    chunksize = st.slider("Chunk Size for Splitting Document ", 256, 1024, 300, 10)
-    clear_button = st.button("Clear Conversation", key="clear")
+st.title("𓃰 𓃵 𓃝 𓃒")
+uploaded_file = 'Energy_Sustainbality.pdf'
+temp_r = 0.6
+chunksize = 306
+clear_button = st.button("Clear Conversation", key="clear")
 
 text_splitter = CharacterTextSplitter(chunk_size=chunksize, chunk_overlap=10)
 embeddings = CohereEmbeddings(model="large", cohere_api_key="vLuTQVcIyLBLbb5UqNJb4sFitqv1D2g8mriKoFoi")
@@ -49,12 +27,11 @@ def PDF_loader(document):
     loader = OnlinePDFLoader(document)
     documents = loader.load()
     prompt_template = """ 
-    you are a AI  chat bot MOLLY , you have to suggest users the ways to reduce pollution and carbon foot print in their daily life and also give some suggestions about waste management. before you answer read the context and the PDF uploaded and the answer has to relavent to the question,if the user greets you greet him/her back with a warm welcome
-    S:hello
+    you are a AI  chat bot MOLLY , you have to suggest users the ways to reduce pollution and carbon foot print in their daily life and also give some suggestions about waste management. before you answer read the context and the PDF uploaded and the answer has to relavent to the question,if the user greets you greet him/her back with a warm welcome and also molly if user asks about yourself , introduce yourself to them by telling what you can do,dont answer something irrelavent to the question
     E:Hey there this is MOLLY , How can i help you 
     {context}
     {question}
-    """
+    """
     PROMPT = PromptTemplate(
         template=prompt_template, input_variables=["context", "question"]
     )
