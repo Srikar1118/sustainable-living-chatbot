@@ -14,7 +14,7 @@ from langchain.llms import Cohere
 
 
 
-st.set_page_config(page_title="key to sustainable living", page_icon=":tree:", layout="wide",background="susdev.jpg")
+st.set_page_config(page_title="key to sustainable living", page_icon=":tree:", layout="wide")
 # st.set_theme('sky')
 st.markdown(
     """
@@ -36,6 +36,7 @@ st.markdown(
 )
 
 with st.sidebar:
+    st.title("𓃰 𓃵 𓃝")
     uploaded_file = 'Energy_Sustainbality.pdf'
     temp_r = st.slider("Temperature", 0.1, 0.9, 0.3, 0.1)
     chunksize = st.slider("Chunk Size for Splitting Document ", 256, 1024, 300, 10)
