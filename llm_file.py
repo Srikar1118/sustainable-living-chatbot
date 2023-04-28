@@ -15,7 +15,16 @@ from langchain.llms import Cohere
 
 
 st.set_page_config(page_title="key to sustainable living", page_icon=":tree:", layout="wide", background="susdev.jpg")
-stt.set_theme('sky')
+st.set_theme('sky')
+st.markdown(
+   f”””
+   <style>
+   p {
+   background-image: url(‘susdev.jpg’);
+   }
+   </style>
+   ”””,
+   unsafe_allow_html=True)
 
 st.markdown(
     "<h1 style='text-align: center;'>LETS LEAD AN ECO-FRIENDLY LIFE</h1>",
