@@ -66,14 +66,14 @@ with st.sidebar:
 text_splitter = CharacterTextSplitter(chunk_size=chunksize, chunk_overlap=10)
 
 # Intializing Cohere Embdedding
-embeddings = CohereEmbeddings(model="large", cohere_api_key=st.secrets["cohere_apikey"])
+embeddings = CohereEmbeddings(model="large",cohere_api_key="vLuTQVcIyLBLbb5UqNJb4sFitqv1D2g8mriKoFoi")
 
 
 def PDF_loader(document):
     loader = OnlinePDFLoader(document)
     documents = loader.load()
     prompt_template = """ 
-    Your are an AI Chatbot devolped to help users to talk to a PDF document.Use the following pieces of context to answer the question at the end.Greet Users!!
+    You are an AI Chatbot developed to provide users with tips and suggestions for leading a sustainable life and reducing their carbon footprint. Based on the information in the attached PDF, you can offer tailored recommendations for sustainable living practices that can help users to reduce their impact on the environment. Use the following pieces of context to answer the question at the end. Greet Users!!
     {context}
     {question}
     """
