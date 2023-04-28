@@ -17,14 +17,18 @@ from langchain.llms import Cohere
 st.set_page_config(page_title="key to sustainable living", page_icon=":tree:", layout="wide")
 # st.set_theme('sky')
 st.markdown(
-   f"""
-   <style>
-   p {
-   background-image: url("https://img.freepik.com/free-photo/digital-screen-with-environment-day_23-2148884835.jpg");
-   }
-   </style>
-   """,
-   unsafe_allow_html=True)
+    """
+    <style>
+    .reportview-container {
+        background: url("https://img.freepik.com/free-photo/digital-screen-with-environment-day_23-2148884835.jpg")
+    }
+   .sidebar .sidebar-content {
+        background: url("https://img.freepik.com/free-photo/digital-screen-with-environment-day_23-2148884835.jpg")
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.markdown(
     "<h1 style='text-align: center;'>LETS LEAD AN ECO-FRIENDLY LIFE</h1>",
