@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import os
-import wget
 import streamlit as st
 import streamlit_themes as stt
 from streamlit_chat import message
