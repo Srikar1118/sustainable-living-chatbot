@@ -16,7 +16,7 @@ from langchain.llms import Cohere
 
 
 
-st.set_page_config(page_title="key to sustainable living", page_icon=":tree:", layout="wide", background="susdev.jpg"))
+st.set_page_config(page_title="key to sustainable living", page_icon=":tree:", layout="wide", background="susdev.jpg")
 stt.set_theme('sky')
 
 st.markdown(
