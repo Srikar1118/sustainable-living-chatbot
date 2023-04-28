@@ -36,7 +36,7 @@ st.markdown(
 )
 
 with st.sidebar:
-    st.title("𓃰 𓃵 𓃝")
+    st.title("𓃰 𓃵 𓃝 𓃒")
     uploaded_file = 'Energy_Sustainbality.pdf'
     temp_r = st.slider("Temperature", 0.1, 0.9, 0.3, 0.1)
     chunksize = st.slider("Chunk Size for Splitting Document ", 256, 1024, 300, 10)
