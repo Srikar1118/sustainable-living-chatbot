@@ -90,7 +90,7 @@ def PDF_loader(document):
         llm=Cohere(
             model="command-xlarge-nightly",
             temperature=temp_r,
-            cohere_api_key=st.secrets["cohere_apikey"],
+            cohere_api_key="a5RSvZpezes44WewxVJ1EWnSYSlnaH0PnPCtCSab",
         ),
         chain_type="stuff",
         retriever=retriever,
