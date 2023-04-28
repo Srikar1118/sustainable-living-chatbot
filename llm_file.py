@@ -20,7 +20,7 @@ st.markdown(
    f"""
    <style>
    p {
-   background-image: url(‘susdev.jpg’);
+   background-image: url("https://img.freepik.com/free-photo/digital-screen-with-environment-day_23-2148884835.jpg");
    }
    </style>
    """,
