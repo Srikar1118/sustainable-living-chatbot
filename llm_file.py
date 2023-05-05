@@ -18,7 +18,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://cdn.pixabay.com/photo/2023/05/02/13/58/moon-7965365_960_720.jpg");
+             background-image: url("https://thumbs.dreamstime.com/b/green-paper-light-bulb-corporate-social-responsibility-responsible-business-eco-friendly-sustainable-living-concept-beautiful-192601228.jpg");
              background-attachment: fixed;
              background-size: cover
          }}
