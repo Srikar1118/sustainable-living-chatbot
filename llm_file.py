@@ -10,10 +10,6 @@ from langchain.embeddings import CohereEmbeddings
 from langchain.prompts import PromptTemplate
 from langchain.llms import Cohere
 
-
-
-
-st.set_page_config(page_title="key to sustainable living", page_icon=":tree:", layout="wide")
 main_bg = "susdev.jpg"
 main_bg_ext = "jpg"
 st.markdown(
@@ -26,6 +22,10 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
+
+st.set_page_config(page_title="key to sustainable living", page_icon=":tree:", layout="wide")
+
 
 st.title("𓃰 𓃵 𓃝 𓃒")
 uploaded_file = 'Energy_Sustainbality.pdf'
