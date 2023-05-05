@@ -12,7 +12,7 @@ from langchain.llms import Cohere
 
 main_bg = "susdev.jpg"
 
-st.set_page_config(page_title="key to sustainable living", page_icon=":tree:", layout="wide",background= main_bg)
+st.set_page_config(page_title="key to sustainable living", page_icon=":tree:", layout="wide")
 
 
 st.title("𓃰 𓃵 𓃝 𓃒")
