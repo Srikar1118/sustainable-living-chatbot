@@ -11,13 +11,8 @@ from langchain.prompts import PromptTemplate
 from langchain.llms import Cohere
 
 main_bg = "susdev.jpg"
-main_bg_ext = "jpg"
 
-bac ={base64.b64encode(open(main_bg, "rb").read()).decode()}
-
-
-
-st.set_page_config(page_title="key to sustainable living", page_icon=":tree:", layout="wide",background=bac)
+st.set_page_config(page_title="key to sustainable living", page_icon=":tree:", layout="wide",background= main_bg)
 
 
 st.title("𓃰 𓃵 𓃝 𓃒")
