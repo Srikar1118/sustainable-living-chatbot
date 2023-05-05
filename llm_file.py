@@ -18,7 +18,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://thumbs.dreamstime.com/b/green-paper-light-bulb-corporate-social-responsibility-responsible-business-eco-friendly-sustainable-living-concept-beautiful-192601228.jpg");
+             background-image: url("https://media.istockphoto.com/id/935827452/vector/nature-background-template-paper-art-style.jpg?s=612x612&w=0&k=20&c=aIlg6Sf_Fn70M1QhIPwSyphE9Igam4DAK92ekcQnS9E=");
              background-attachment: fixed;
              background-size: cover
          }}
