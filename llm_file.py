@@ -18,7 +18,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://cdn.pixabay.com/photo/2023/05/01/10/42/mountains-7962663_960_720.jpg");
+             background-image: url("https://blueandgreentomorrow.com/wp-content/uploads/2022/01/shutterstock_1458754406-1000x600.jpg");
              background-attachment: fixed;
              background-size: cover
          }}
