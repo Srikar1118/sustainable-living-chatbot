@@ -1,4 +1,5 @@
 import os
+import base64
 import streamlit as st
 from streamlit_chat import message
 from langchain.document_loaders import OnlinePDFLoader
@@ -13,12 +14,14 @@ from langchain.llms import Cohere
 
 
 st.set_page_config(page_title="key to sustainable living", page_icon=":tree:", layout="wide")
+main_bg = "susdev.jpg"
+main_bg_ext = "jpg"
 st.markdown(
-    """
+    f"""
     <style>
-    .reportview-container {
-        background: susdev.jpg
-    }
+    .reportview-container {{
+        background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()})
+    }}
     </style>
     """,
     unsafe_allow_html=True
