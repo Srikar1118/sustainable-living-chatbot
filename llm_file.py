@@ -13,7 +13,7 @@ from langchain.llms import Cohere
 main_bg = "susdev.jpg"
 main_bg_ext = "jpg"
 
-bac = url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()})
+bac ={base64.b64encode(open(main_bg, "rb").read()).decode()}
 
 
 
