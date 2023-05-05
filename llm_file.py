@@ -13,6 +13,16 @@ from langchain.llms import Cohere
 
 
 st.set_page_config(page_title="key to sustainable living", page_icon=":tree:", layout="wide")
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("https://blueandgreentomorrow.com/wp-content/uploads/2022/01/shutterstock_1458754406-1000x600.jpg")
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.title("𓃰 𓃵 𓃝 𓃒")
 uploaded_file = 'Energy_Sustainbality.pdf'
