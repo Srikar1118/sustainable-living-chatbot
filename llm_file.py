@@ -17,7 +17,7 @@ st.markdown(
     """
     <style>
     .reportview-container {
-        background: url("https://blueandgreentomorrow.com/wp-content/uploads/2022/01/shutterstock_1458754406-1000x600.jpg")
+        background: susdev,jpg
     }
     </style>
     """,
