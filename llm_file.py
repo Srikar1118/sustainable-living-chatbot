@@ -17,7 +17,7 @@ st.markdown(
     """
     <style>
     .reportview-container {
-        background: susdev,jpg
+        background: susdev.jpg
     }
     </style>
     """,
