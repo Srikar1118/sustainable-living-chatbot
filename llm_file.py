@@ -20,7 +20,7 @@ def add_bg_from_url():
          .stApp {{
              background-image: url("https://media.istockphoto.com/id/935827452/vector/nature-background-template-paper-art-style.jpg?s=612x612&w=0&k=20&c=aIlg6Sf_Fn70M1QhIPwSyphE9Igam4DAK92ekcQnS9E=");
              background-attachment: fixed;
-             background-size: cover
+             #background-size: cover
          }}
          </style>
          """,
